@@ -24,7 +24,7 @@ public class Event {
     private String location;
     private String category;
     @OneToMany(mappedBy = "event")
-    private List<User> users;
+    List<Booking> bookings;
 
 
 }

@@ -25,9 +25,8 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
     private String password;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "role_id", nullable = false)
-    private Event event;
+    @OneToMany(mappedBy = "user")
+    List<Booking> bookings;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
