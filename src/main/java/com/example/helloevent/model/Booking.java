@@ -1,11 +1,13 @@
 package com.example.helloevent.model;
 
+import com.example.helloevent.dto.Userdto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -19,6 +21,7 @@ public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private Date createdAt;
     @ManyToOne
     private Event event;
     @ManyToOne
