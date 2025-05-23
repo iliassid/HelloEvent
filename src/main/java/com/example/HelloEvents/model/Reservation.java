@@ -1,29 +1,27 @@
-package com.example.helloevent.model;
+package com.example.HelloEvents.model;
 
-import com.example.helloevent.dto.Userdto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "booking")
-@Getter
-@Setter
+@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Booking {
+public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private Date createdAt;
+    @Column(nullable = false)
+    private Long idreservation;
     @ManyToOne
-    private Event event;
+    private Client client;
+
     @ManyToOne
-    private User user;
+    private Evenement evenement;
+
+
 }

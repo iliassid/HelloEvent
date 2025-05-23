@@ -1,13 +1,13 @@
-package com.example.helloevent;
+package com.example.HelloEvents;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloEventApplication {
+public class HelloEventsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloEventApplication.class, args);
+		SpringApplication.run(HelloEventsApplication.class, args);
 	}
 
 }

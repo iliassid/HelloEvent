@@ -1,10 +1,10 @@
-package com.example.helloevent;
+package com.example.HelloEvents;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloEventApplicationTests {
+class HelloEventsApplicationTests {
 
 	@Test
 	void contextLoads() {
